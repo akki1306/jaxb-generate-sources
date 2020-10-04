@@ -48,7 +48,7 @@
                 </executions>
                 <configuration>
                     <!-- Set the package of the generated code -->
-                    <packageName>com.example.myschema</packageName>
+                    <packageName>com.daimler.adx.integration.paragon.invoiceimport.request</packageName>
 
                     <!-- Indicate that we should use DTD input instead of XSDs -->
 

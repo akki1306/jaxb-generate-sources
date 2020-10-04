@@ -1,6 +1,4 @@
-package com.company;
-
-import com.example.myschema.MTIF63INVOICEREQ;
+package com.daimler.adx.integration.paragon.invoiceimport.request;
 
 
 import javax.xml.bind.JAXBContext;
