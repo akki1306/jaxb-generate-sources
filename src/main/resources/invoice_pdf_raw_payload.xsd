@@ -1,6 +1,6 @@
-<xs:schema targetNamespace="test123"
+<xs:schema targetNamespace="http://dcx.com.xi/paragon/services/IF63/InvoicePDF"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="Test123">
+    <xs:element name="MT_IF63_INVOICE_REQ">
         <xs:complexType>
             <xs:sequence>
             <xs:element name="Request">

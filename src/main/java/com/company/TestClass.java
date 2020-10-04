@@ -1,6 +1,7 @@
 package com.company;
 
-import com.example.myschema.Test123;
+import com.example.myschema.MTIF63INVOICEREQ;
+
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
@@ -8,18 +9,18 @@ import java.io.StringWriter;
 
 public class TestClass {
     public static void main(String[] args) throws Exception{
-        Test123 test123 = new Test123();
-        Test123.Request req=new Test123.Request();
-        req.setInvoices(new Test123.Request.Invoices());
-        req.setLogin(new Test123.Request.Login());
+        MTIF63INVOICEREQ test123 = new MTIF63INVOICEREQ();
+        MTIF63INVOICEREQ.Request req=new MTIF63INVOICEREQ.Request();
+        req.setInvoices(new MTIF63INVOICEREQ.Request.Invoices());
+        req.setLogin(new MTIF63INVOICEREQ.Request.Login());
         test123.setRequest(req);
         jaxbObjectToXML(test123);
     }
 
-    private static String jaxbObjectToXML(Test123 test123) throws Exception {
+    private static String jaxbObjectToXML(MTIF63INVOICEREQ test123) throws Exception {
         String xmlString = "";
 
-            JAXBContext context = JAXBContext.newInstance(Test123.class);
+            JAXBContext context = JAXBContext.newInstance(MTIF63INVOICEREQ.class);
             Marshaller m = context.createMarshaller();
 
             m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE); // To format XML
@@ -27,8 +28,6 @@ public class TestClass {
             StringWriter sw = new StringWriter();
             m.marshal(test123, sw);
             xmlString = sw.toString();
-
-
 
         return xmlString;
     }
